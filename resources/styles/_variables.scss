@@ -1,44 +1,67 @@
-// Breakpoints for mobile
-$bp-mobile-1: "(min-width: 320px)";
-$bp-mobile-2: "(min-width: 360px)";
-$bp-mobile-3: "(min-width: 400px)";
-$bp-mobile-4: "(min-width: 480px)";
-$bp-mobile-5: "(min-width: 600px)";
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
 
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face("SalesforceSans-Regular", "../fonts/SalesforceSans-Regular", 400);
+@include font-face("SalesforceSans-Light", "../fonts/SalesforceSans-Light", 100);
+
+// Breakpoints for mobile	
+$bp-mobile-1:"(min-width: 320px)";
+$bp-mobile-2:"(min-width: 360px)";
+$bp-mobile-3:"(min-width: 400px)";
+$bp-mobile-4:"(min-width: 480px)";
+$bp-mobile-5:"(min-width: 600px)";
 // Breakpoints for tablet
-$bp-tablet-1: "(min-width: 720px)";
-$bp-tablet-2: "(min-width: 840px)";
-$bp-tablet-3: "(min-width: 960px)";
-
+$bp-tablet-1:"(min-width: 720px)";
+$bp-tablet-2:"(min-width: 840px)";
+$bp-tablet-3:"(min-width: 960px)";
 // Breakpoints for desktop
-$bp-desktop-1: "(min-width: 1024px)";
-$bp-desktop-2: "(min-width: 1280px)";
-$bp-desktop-3: "(min-width: 1824px)";
-$bp-desktop-4: "(min-width: 2048px)";
-
-/* THEME */
-$header-footerBGColor: #d1d3d4;
-$header-footerFONTColor: #666666;
-
+$bp-desktop-1:"(min-width: 1024px)";
+$bp-desktop-2:"(min-width: 1280px)";
+$bp-desktop-3:"(min-width: 1824px)";
+$bp-desktop-4:"(min-width: 2048px)";
+// THEME
+$header-footerBGColor: #7e7e7e;
+$header-footerFONTColor: #fff;
+//Header
+$headerBGColor: #fff;
+$headerFONTColor: #6b6968;
+//Footer
+$footerBGColor: #7e7e7e;
+$footerFONTColor: #fff;
 // Buttons colors
 $safeColor: #7AC043;
 $dangerColor: #E31D1A;
-
-
 // Font colors
 $primary-color: #5e5e5e;
 $grey-color: #949494;
 $title-color: #474747;
 $link-color: #3d627f;
 $label-color: #a5a5a5;
-
-
 $record-bg-color: #e7e8ea;
-
-
-
-
-
 
 // MIXINS
 
@@ -50,11 +73,9 @@ $record-bg-color: #e7e8ea;
 	background-size: 50px;
 	background-position: -4px;
 }
-
 //fielo titles
 @mixin fieloTitle {
-  color: $title-color;
-  font-size: 20px;
-  font-weight: 300;
+	color: $title-color;
+	font-size: 20px;
+	font-weight: 300;
 }
-

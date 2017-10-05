@@ -126,6 +126,11 @@ gulp.task('cmsCopyResourcesFiles', () => {
   return gulp.src(['resources/images/**'], { dot: true})
   .pipe(gulp.dest('resource-bundles/FieloCms_Theme.resource/images'))
   .pipe($.size({title: 'copy'}));
+  
+  // copy fonts
+  return gulp.src(['resources/fonts/**'], { dot: true})
+  .pipe(gulp.dest('resource-bundles/FieloCms_Theme.resource/fonts'))
+  .pipe($.size({title: 'copy'}));
 });
 
 // Builds zip for using as static resource
