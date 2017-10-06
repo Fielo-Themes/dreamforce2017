@@ -1,49 +1,106 @@
-.fielo-header,
-.fielo-footer {
-  background-color: $header-footerBGColor;
-  color: $header-footerFONTColor;
-  .fielo-navigation.fielo-menu--isHorizontal .fielo-list,
-  .fielo-navigation.fielo-menu--isVertical .fielo-list {
-    margin: 10px 0;
-    .fielo-list__item .fielo-link {
-      color: inherit;
-      text-transform: uppercase;
-    }
-  }
-}
+.fielo-header, .fielo-footer {
+    .fielo-navigation.fielo-menu--isHorizontal .fielo-list, .fielo-navigation.fielo-menu--isVertical .fielo-list {
+        margin: 10px 0;
 
-.fielo-header {
-  .fielo-image {
-    margin-top: 5px;
-    max-height: 50px;
-    width: auto;
-  }
-  .fielo-navigation.fielo-menu--isHorizontal .fielo-list {
-    margin: 0;
-    .fielo-list__item {
-      text-transform: uppercase;
-      white-space: nowrap;
-      &:hover {
-        background: none;
-      }
-      .fielo-list {
-        background: rgba(0, 0, 0, 0.50);
-        padding: 0 10px;
-        display: none;
-        .fielo-list__item {
-          border-bottom: 1px solid #ffffff;
-          padding: 10px;
-          &:last-child {
-            border-bottom: none;
-          }
-          .fielo-link {
-            color: $header-footerBGColor;
-          }
+        .fielo-list__item .fielo-link {
+            color: inherit;
+            text-transform: uppercase;
         }
-      }
-      &.fielo-js-hover .fielo-list {
-        display: block;
-      }
     }
-  }
+}
+.fielo-header {
+    background-color: $headerBGColor;
+    color: $headerFONTColor;
+    border-bottom: 1px solid #95989a;
+
+    .brandlogo {
+        .fielo-field__label {
+            display: none;
+        }
+        .fielo-field__value {
+            margin: 0px;
+
+            .fielo-image {
+                margin: 0px;
+            }
+        }
+    }
+    .login-menu {
+        height: 100%;
+
+        .fielo-list {
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            -ms-align-items: center;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 0;
+
+            .fielo-list__item {
+                padding: 0px;
+
+                a {
+                    height: 35px;
+                    border-right: 1px solid #6f6f79;
+                    line-height: 35px;
+                    vertical-align: middle;
+                    padding: 0px 15px 0px 0px;
+                    margin: 0px 15px 0px 0px;
+                    color: #6b6968 !important;
+                    font-family: "SalesforceSans-Regular";
+                    font-size: 15px;
+                    text-transform: capitalize !important;
+                }
+                &:last-of-type {
+                    a {
+                        color: #fff !important;
+                        height: 45px;
+                        line-height: 45px;
+                        margin: 0px;
+                        padding: 0px 15px;
+                        background: #005bd9;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .fielo-image {
+        margin-top: 5px;
+        max-height: 50px;
+        width: auto;
+    }
+    .fielo-navigation.fielo-menu--isHorizontal .fielo-list {
+        margin: 0;
+
+        .fielo-list__item {
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            &:hover {
+                background: none;
+            }
+            .fielo-list {
+                background: rgba(0, 0, 0, 0.50);
+                padding: 0 10px;
+                display: none;
+
+                .fielo-list__item {
+                    border-bottom: 1px solid #ffffff;
+                    padding: 10px;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    .fielo-link {
+                        color: $header-footerBGColor;
+                    }
+                }
+            }
+            &.fielo-js-hover .fielo-list {
+                display: block;
+            }
+        }
+    }
 }
