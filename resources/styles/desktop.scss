@@ -2,23 +2,20 @@
  * Reglas para dispositivos Desktop
  */
 @import 'tablet';
-
-
-@media #{$bp-desktop-1} {
-	.fielo-header,
-	.fielo-footer {
-	  &>.fielo-row {
-	    width: 1000px;
-	  }
+.fielo-header, .fielo-footer, .fielo-main {
+	width:100%;
+	max-width: 100%;
+}
+.fielo-header, .fielo-footer, .fielo-main {
+	&>.fielo-row {
+		width: 100%;
+		max-width:1280px;
+		position:relative;
+		margin:auto;
+		padding:0px 20px;
 	}
 }
-@media #{$bp-desktop-2} {
-	.fielo-header,
-	.fielo-footer {
-	  &>.fielo-row {
-	    width: 1170px;
-	  }
-	}
-}
-@media #{$bp-desktop-3} {}
-@media #{$bp-desktop-4} {}
+@media #{$bp-desktop-1}{}
+@media #{$bp-desktop-2}{}
+@media #{$bp-desktop-3}{}
+@media #{$bp-desktop-4}{}
