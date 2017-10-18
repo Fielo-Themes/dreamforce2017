@@ -1,18 +1,44 @@
 .powered-by {
-	font-family: "Helvetica";
-	font-size: 10px;
-	.sfdc_richtext {
-		height: 21px;
-		line-height: 21px;
-		vertical-align: middle;
-		img {
-			height: 21px;
-			width: auto;
-			margin-left: 5px;
-		}
-	}
+  font-family: "Helvetica";
+  font-size: 10px;
+
+  .sfdc_richtext {
+    height: 21px;
+    line-height: 21px;
+    vertical-align: middle;
+
+    img {
+      height: 21px;
+      width: auto;
+      margin-left: 5px;
+    }
+  }
 }
-.copyright{
-	font-family: "Helvetica";
-	font-size: 13px;
+
+.copyright {
+  font-family: "Helvetica";
+  font-size: 13px;
+}
+
+.banner-home-guest {
+  margin: 0px;
+  >div {
+    margin: 0px;
+
+    .fielo-field__label {
+      display: none
+    }
+    .fielo-field__value {
+      margin: 0px;
+    }
+  }
+}
+
+.fielo-content {
+  font-family: "SalesforceSans-Light";
+  font-size: 15px;
+  color: $grey-color;
+  a {
+    @include btnStyle;
+  }
 }

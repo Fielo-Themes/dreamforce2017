@@ -1,21 +1,70 @@
 /*
  * Reglas para dispositivos Desktop
  */
+
+body {
+  font-family: 'Open Sans', Verdana, sans-serif;
+  background: #f2f2f2;
+  main {
+    width: 100%;
+    max-width: 1040px;
+    position: relative;
+    margin: auto;
+    padding: 50px 20px;
+    >div {
+      background: #fff;
+      padding: 50px;
+    }
+  }
+}
+
 @import 'tablet';
-.fielo-header, .fielo-footer, .fielo-main {
-	width:100%;
-	max-width: 100%;
+.fielo-header,
+.fielo-footer {
+  width: 100%;
+  max-width: 100%;
 }
-.fielo-header, .fielo-footer, .fielo-main {
-	&>.fielo-row {
-		width: 100%;
-		max-width:1280px;
-		position:relative;
-		margin:auto;
-		padding:0px 20px;
-	}
+
+.fielo-header,
+.fielo-footer {
+  &>.fielo-row {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    margin: auto;
+    padding: 0px 20px;
+  }
 }
-@media #{$bp-desktop-1}{}
-@media #{$bp-desktop-2}{}
-@media #{$bp-desktop-3}{}
-@media #{$bp-desktop-4}{}
+
+.home-guest {
+  body {
+    background: #fff;
+    main {
+      padding: 0px;
+    }
+  }
+  .fielo-main {
+    max-width: 100%;
+    >.fielo-row {
+      width: 100%;
+      max-width: 1280px;
+      position: relative;
+      margin: auto;
+      padding: 0px 20px;
+      >div {
+        max-width: 864px;
+        &.banner-home-guest {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media #{$bp-desktop-1} {}
+
+@media #{$bp-desktop-2} {}
+
+@media #{$bp-desktop-3} {}
+
+@media #{$bp-desktop-4} {}

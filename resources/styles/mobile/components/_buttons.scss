@@ -1,18 +1,27 @@
 // Fielo Buttons
-.fielo-button{
-  border: none;
+@mixin fieloButton {
   font-size: 1.2em;
   text-transform: uppercase;
   border-radius: 5px;
   padding: 7px 20px;
   margin: 5px 0;
-  background-color:#ddd;
+  background-color: #ddd;
+  font-family: "SalesforceSans-Regular";
+  border: none !important;
+  outline: none !important;
+}
+
+.fielo-button {
+  @include fieloButton;
+
   &--safe {
+    @include fieloButton;
     background-color: $safeColor;
     color: #FFF;
   }
   &--danger,
   &__cancel {
+    @include fieloButton;
     color: #FFF;
     background-color: $dangerColor;
   }
@@ -23,8 +32,15 @@
   color: #FFF;
 }
 
+.fielo-button__edit,
+.fielo-button__filter {
+  background: #005bd9;
+  color: #fff;
+  border-radius: 0px;
+}
+
 .fielo-button__submit.fielo-button--danger {
-    background-color: $dangerColor;
+  background-color: $dangerColor;
 }
 
 
@@ -51,5 +67,4 @@
       }
     }
   }
-
 }

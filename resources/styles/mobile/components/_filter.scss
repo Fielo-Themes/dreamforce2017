@@ -1,4 +1,3 @@
-
 .fielo-filter.fielo-menu--isVertical {
   .fielo-list {
     padding: 0;
@@ -12,10 +11,12 @@
         margin-bottom: 3px;
       }
       &.active {
-        background: #afafaf;
+        background: none;
+        color: #005bd9;
       }
-      &:hover{
-        background: #afafaf;
+      &:hover {
+        background: none;
+        color: #005bd9;
         .fielo-list {
           display: block;
           margin: 0 -10px;
@@ -26,6 +27,7 @@
             padding: 6px 20px 0;
             &:hover {
               background: none;
+              color: #005bd9;
             }
             .fielo-link {
               text-transform: inherit;
@@ -63,7 +65,8 @@
       padding: 4px 10px 2px;
       white-space: nowrap;
       &.active {
-        background: #afafaf;
+        background: none;
+        color: #005bd9;
       }
       .fielo-link {
         font-size: 12px;
@@ -73,8 +76,9 @@
       .fielo-list {
         display: none;
       }
-      &:hover{
-        background: #afafaf;
+      &:hover {
+        background: none;
+        color: #005bd9;
         .fielo-list {
           display: block;
           top: 100%;
