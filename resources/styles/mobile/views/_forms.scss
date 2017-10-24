@@ -1,64 +1,88 @@
-.fielo-organization-account,
-.fielo-form-view {
-  .fielo-field__value {
-    color: #949494;
-    border-bottom: 1px solid $label-color;
-    padding-bottom: 5px;
-    font-size: 16px;
-    margin-top: 0;
-    width: 100%;
-    a {
-      color: $grey-color;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
 .fielo-form,
 .fielo-form-view {
-  width: 100%;
-  margin-bottom: 30px;
-  .fielo-field {
-    @include leftFlex;
-    @include middleFlex;
-    margin: 10px 0px;
-    .fielo-field__label {
-      width: auto;
-      margin: 0px;
-      text-align: right;
-      margin-right: 20px;
-      min-width: 190px;
-      color: $title-color;
-      font-family: SalesforceSans-Regular;
-      font-size: 17px;
-      font-weight: 300;
-    }
-
-    .fielo-field__value {
-      max-width: 550px;
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-      border: none;
-      color: $title-color;
-      font-family: SalesforceSans-Regular;
-      font-size: 17px;
-      font-weight: 300;
-    }
-  }
-  &.fielo-form {
+    width: 100%;
+    margin-bottom: 30px;
     .fielo-field {
-      .fielo-field__value {
-        input {
-          width: 100%;
-          padding: 10px 40px 10px 10px;
-          color: $title-color;
-          font-size: 17px;
-          text-align: left;
+        @include middleFlex;
+        margin: 20px 0px;
+        .fielo-field__label {
+            display: block;
+            width: 100%;
+            font-family: SalesforceSans-Regular;
+            font-size: 17px;
+            font-weight: 300;
+            margin: 0px;
+            color: $label-color;
         }
-      }
+
+        .fielo-field__value {
+            display: block;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            color: $title-color;
+            font-family: SalesforceSans-Regular;
+            font-size: 19px;
+            font-weight: 300;
+            a {
+                color: $title-color;
+                text-decoration: none;
+                pointer-events: none;
+            }
+            input {
+                width: 100%;
+                padding: 5px;
+                &.fielo-input--is-dirty:not(:focus):valid {
+                    background: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+        &--is-FieloPLT__Points__c {
+            .fielo-field__label {
+                text-transform: uppercase
+            }
+            .fielo-field__value {
+                font-family: SalesforceSans-Bold;
+                font-size: 21px;
+                color: $link-color;
+            }
+        }
     }
-  }
+    &.fielo-filter {
+        fieldset {
+            display: inline-block;
+            .fielo-field {
+                display: inline-block;
+                margin: 20px 10px 20px 0px;
+                width: 168px;
+                .fielo-field__label,
+                .fielo-field__value {
+                    display: block;
+                    label {
+                        display: block;
+                        font-size: 17px;
+                        text-transform: none;
+                        box-shadow: none;
+                        text-shadow: none;
+                        margin: 0px 0px 5px 0px;
+                    }
+                    input,
+                    select {
+                        height: 45px;
+                        box-sizing: border-box;
+                        box-shadow: none;
+                        text-shadow: none;
+                        background: none;
+                        border: 1px solid $border-color;
+                    }
+                }
+            }
+        }
+        .fielo-controls {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
 }

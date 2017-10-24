@@ -34,9 +34,10 @@
 
 .fielo-button__edit,
 .fielo-button__filter {
-  background: #005bd9;
+  background: $link-color;
   color: #fff;
   border-radius: 0px;
+  font-size: 14px;
 }
 
 .fielo-button__submit.fielo-button--danger {

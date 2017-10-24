@@ -21,6 +21,9 @@
   }
 }
 
+@include font-face("SalesforceSans-Bold",
+"../fonts/SalesforceSans-Bold",
+400);
 @include font-face("SalesforceSans-Regular",
 "../fonts/SalesforceSans-Regular",
 400);
@@ -56,12 +59,14 @@ $footerFONTColor: #fff;
 $safeColor: #7AC043;
 $dangerColor: #E31D1A;
 // Font colors
+$title-color: #4a4a4a;
+$label-color: #767676;
+$value-color: #474747;
+$link-color: #005bd9;
 $primary-color: #5e5e5e;
 $grey-color: #95989a;
-$title-color: #474747;
-$link-color: #3d627f;
-$label-color: #a5a5a5;
 $record-bg-color: #ddd;
+$border-color: #6e6e6e;
 
 // MIXINS
 // Shopping cart Icon
@@ -78,9 +83,10 @@ $record-bg-color: #ddd;
   color: $title-color;
   font-family: SalesforceSans-Regular;
   font-size: 29px;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid $border-color;
   padding-bottom: 15px;
-  margin: 0px;
+  margin: 0px 0px 25px 0px;
+  ;
   font-weight: 300;
   width: 100%;
 }
