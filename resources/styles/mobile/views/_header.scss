@@ -140,25 +140,23 @@
     -ms-justify-content: center;
     -webkit-justify-content: center;
     justify-content: center;
-
-    .main-menu {
-      .fielo-menu__block {
-        >.fielo-list {
-          >.fielo-list__item {
-            .fielo-list {
-              .fielo-list__item {
-                padding: 0px !important;
-
-                .fielo-link {
-                  padding: 10px 0px !important;
-                }
-              }
-            }
-          }
+  }
+  .main-menu {
+    .fielo-list__item {
+      padding: 1px 16px;
+      .fielo-list__item {
+        padding: 0px !important;
+        .fielo-link {
+          padding: 10px 0px !important;
         }
       }
     }
+    .fielo-link {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
   }
+
   .fielo-link {
     text-transform: uppercase;
     font-family: "SalesforceSans-Regular";
