@@ -4,15 +4,16 @@
     margin-bottom: 30px;
     .fielo-field {
         @include middleFlex;
-        margin: 20px 0px;
+        margin: 20px 0px 40px;
         .fielo-field__label {
             display: block;
             width: 100%;
             font-family: SalesforceSans-Regular;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 300;
             margin: 0px;
             color: $label-color;
+            text-transform: uppercase;
         }
 
         .fielo-field__value {
