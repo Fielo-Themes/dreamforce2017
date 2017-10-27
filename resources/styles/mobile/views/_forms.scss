@@ -30,7 +30,9 @@
                 text-decoration: none;
                 pointer-events: none;
             }
-            input {
+            input,
+            select,
+            textarea {
                 width: 100%;
                 padding: 5px;
                 &.fielo-input--is-dirty:not(:focus):valid {
