@@ -22,7 +22,10 @@
 		.fielo-link {
 			color:#005bd9;
 		}
-
+	}
+	.fielo-table__head .fielo-field {
+		color: #ffffff;
+		text-transform: lowercase;
 	}
 	.fielo-field--is-FieloELR__Description__c {
 		font-size: 18px;
