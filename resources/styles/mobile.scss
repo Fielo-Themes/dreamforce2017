@@ -75,6 +75,20 @@
   }
 }
 
+
+// Invoice Upload
+.cms-prp-invoice-form {
+	.fielo-title {
+		border:none;
+		margin-bottom: 0;
+  	padding: 0;
+	}
+}
+.cms-prp-section-header__left {
+	font-size: 24px;
+	width: 200px;
+}
+
 .cms-prp-invoice-fieldset {
 	.fielo-field {
 		float: left;
@@ -111,6 +125,9 @@
 		color: #fff;
   	margin-left: 10px;
 	}
+}
+.cms-prp-invoice-items {
+  margin-top: 40px;
 }
 .cms-prp-lookup-search__model .fielo-button {
 	background: #005bd9;
