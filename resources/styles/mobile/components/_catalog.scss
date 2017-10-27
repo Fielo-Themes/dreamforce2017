@@ -1,26 +1,94 @@
 .fieloplt-catalog {
+  .fielo-title {
+    border: none;
+    margin: 0;
+  }
   .fielo-link {
     color: inherit;
   }
   .fielo-record {
     position:relative;
   }
-  &[data-layout="grid"] .fielo-field {
-    background: #cccccc;
-    text-align: center;
+  &[data-layout="grid"] {
+    .fielo-grid {
+      position: relative;
+      left: 6%;
+    }
+    .fielo-record{
+      width: calc(27.333333% - 16px);
+    }
+    .fielo-field {
+      background: #cccccc;
+      text-align: center;
 
-    &.fielo-field--is-ViewImage {
-      background: none;
-      border: 1px solid #000000;
-      padding: 0;
-    }
-    &.fielo-field--is-PointsCant__c .fielo-field__value {
-      font-weight: bold;
-    }
-    &.fielo-field--is-Tags {
-      position: absolute;
-      top: 40px;
-      background: transparent;
+      &.fielo-field--is-ViewImage {
+        background: none;
+        border: 1px solid #000000;
+        padding: 0;
+        margin: 0;
+      }
+      &.fielo-field--is-Name {
+        padding: 0;
+        margin: 0;
+        top: -46px;
+        position: relative;
+        height: 46px;
+        border: 1px solid #000000;
+        border-top: none;
+        background-color: #a5a5a5;
+        color: #e8e8e8;
+        font-size: 16px;
+        border-bottom: 4px solid #fff;
+      }
+      &.fielo-field--is-FieloPLT__Points__c {
+        color: #005cd9;
+        width: 90px;
+        height: 29px;
+        padding: 13px 10px 5px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #efefef;  
+        border: 1px solid #000000;
+        top: -46px;
+        position: relative;
+      }
+      &.fielo-field--is-AddtoCart { 
+        color: $primary-color;
+        width: 117px;
+        background-color: #fff;
+        font-size: 13px;
+        top: -100px;
+        position: relative;
+        left: 112px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        padding: 0 9px 0 0;
+        margin: 0;
+        text-align: left;
+        
+        .fieloplt-add-to-cart__quantity {
+          border-radius: 0;
+          border: none;
+          height: 45px;
+          text-align: right;
+        }
+        .fieloplt-add-to-cart__submit{
+          text-indent: -999999999px;
+          width: 55px;
+          border-radius: 0px;
+          height: 47px;
+          margin: 0;
+          position: absolute;
+          right: 0px;
+        }
+      }
+
+      &.fielo-field--is-Tags {
+        position: absolute;
+        top: 40px;
+        background: transparent;
+      }
     }
   }
 }
