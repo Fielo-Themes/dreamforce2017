@@ -1,0 +1,62 @@
+
+// Invoice Upload
+.cms-prp-invoice-form {
+	.fielo-title {
+		border:none;
+		margin-bottom: 0;
+  	padding: 0;
+	}
+}
+.cms-prp-section-header__left {
+	font-size: 24px;
+	width: 200px;
+}
+
+.cms-prp-invoice-fieldset {
+	.fielo-field {
+		float: left;
+	  margin-right: 50px;
+	  width: 44%;
+	  height: 70px;
+	  margin-bottom: 0px;
+	}
+}
+
+.cms-prp-lookup-button__icon {
+	background-color: #6b6968;
+  position: relative;
+  left: -50px;
+  border-radius: 0;
+  height: 39px;
+  top: 4px;
+}
+
+.cms-prp-invoice-items,
+.cms-prp-advanced-product-search,
+.cms-prp-multifileuploader,
+.cms-prp-lookup-search__model {
+	.fielo-field {
+		display: table-cell;
+	}
+	.fielo-input {
+		width: 92% !important;
+	}
+	.fielo-field--is-FieloPRP__Product__c {
+		width: 6%;
+	}
+	.cms-prp-section-header  .fielo-button {
+		background: #005bd9;
+		color: #fff;
+  	margin-left: 10px;
+	}
+}
+.cms-prp-invoice-items {
+  margin-top: 40px;
+}
+.cms-prp-advanced-product-search,
+.cms-prp-lookup-search__model{	
+	.fielo-button {
+		background: #005bd9;
+		color: #fff;
+	}
+}
