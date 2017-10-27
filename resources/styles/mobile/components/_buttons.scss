@@ -7,9 +7,36 @@
   margin: 5px 0;
   background-color: #ddd;
   font-family: "SalesforceSans-Regular";
-  border: none !important;
-  outline: none !important;
+  border: none;
+  outline: none;
 }
+
+@mixin btnStyle {
+  display: inline-block;
+  background: #005bd9;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: "SalesforceSans-Regular";
+  font-size: 14px;
+  border: none;
+  outline: none;
+  line-height: 45px;
+  margin: 0px;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: #ffffff !important;
+  }
+}
+
+.fielo-button--is-blue {
+  .fielo-link {
+    @include btnStyle;
+    margin: 0 !important;
+    padding: 6px 36px!important
+  }
+}
+
 
 .fielo-button {
   @include fieloButton;

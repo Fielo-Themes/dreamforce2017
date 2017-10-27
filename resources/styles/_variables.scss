@@ -91,22 +91,6 @@ $border-color: #6e6e6e;
   width: 100%;
 }
 
-@mixin btnStyle {
-  display: inline-block;
-  margin: 0 auto;
-  background: #005bd9;
-  color: #fff;
-  padding: 20px 25px;
-  text-transform: uppercase;
-  font-family: "SalesforceSans-Regular";
-  border: none !important;
-  outline: none !important;
-  &:hover {
-    text-decoration: none;
-    opacity: 0.8;
-  }
-}
-
 @mixin flexFlex {
   display: -ms-flex;
   display: -webkit-flex;

@@ -122,13 +122,13 @@ gulp.task('cmsCopyResourcesFiles', () => {
   .pipe(gulp.dest('resource-bundles/FieloCms_Theme.resource'))
   .pipe($.size({title: 'copy'}));
 
-  // copy images
-  return gulp.src(['resources/images/**'], { dot: true})
+  // // copy images
+  gulp.src(['resources/images/**/*'], { dot: true})
   .pipe(gulp.dest('resource-bundles/FieloCms_Theme.resource/images'))
   .pipe($.size({title: 'copy'}));
   
-  // copy fonts
-  return gulp.src(['resources/fonts/**'], { dot: true})
+  // // copy fonts
+  return gulp.src(['resources/fonts/**/*'], { dot: true})
   .pipe(gulp.dest('resource-bundles/FieloCms_Theme.resource/fonts'))
   .pipe($.size({title: 'copy'}));
 });

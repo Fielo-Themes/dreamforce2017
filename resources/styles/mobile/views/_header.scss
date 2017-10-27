@@ -16,18 +16,9 @@
   color: $headerFONTColor;
   border-bottom: 1px solid #95989a;
 
-  .brandlogo {
-    .fielo-field__label {
-      display: none;
-    }
-    .fielo-field__value {
-      margin: 0px;
+  
 
-      .fielo-image {
-        margin: 0px;
-      }
-    }
-  }
+
   .login-profile-menu {
     display: -ms-flex;
     display: -webkit-flex;
@@ -60,20 +51,8 @@
             vertical-align: middle;
             padding: 0px 15px 0px 0px;
             margin: 0px 15px 0px 0px;
-            color: #6b6968 !important;
+            color: #6b6968;
             text-transform: capitalize !important;
-            font-size: 15px !important;
-          }
-          &:last-of-type {
-            a {
-              color: #fff !important;
-              height: 45px;
-              line-height: 45px;
-              margin: 0px;
-              padding: 0px 15px;
-              background: #005bd9;
-              font-size: 14px !important;
-            }
           }
           &.profile {
             a {
@@ -124,17 +103,7 @@
     .fielo-list__item {
       white-space: nowrap;
 
-      .fielo-link {
-        text-transform: uppercase;
-        font-family: "SalesforceSans-Regular";
-        font-size: 15px;
-        color: $headerFONTColor;
-
-        &:hover {
-          text-decoration: none !important;
-          color: #005bd9 !important;
-        }
-      }
+      
       &:hover {
         background: none;
       }
@@ -190,7 +159,35 @@
       }
     }
   }
+  .fielo-link {
+    text-transform: uppercase;
+    font-family: "SalesforceSans-Regular";
+    font-size: 14px;
+    color: $headerFONTColor;
+
+    &:hover {
+      text-decoration: none !important;
+      color: #005bd9 !important;
+    }
+  }
 }
+
+
+.brandlogo {
+  .fielo-list {
+    margin: 0;
+    padding: 0;
+  }
+  .fielo-image {
+    margin: 0;
+    height: 60px;
+    max-height: unset;
+  }
+  .fielo-list__item {
+    padding: 0; 
+  }
+}
+
 
 .fieloplt-account {
   display: inline-block;

@@ -1,19 +1,4 @@
-.powered-by {
-  font-family: "Helvetica";
-  font-size: 10px;
 
-  .sfdc_richtext {
-    height: 21px;
-    line-height: 21px;
-    vertical-align: middle;
-
-    img {
-      height: 21px;
-      width: auto;
-      margin-left: 5px;
-    }
-  }
-}
 
 .copyright {
   font-family: "Helvetica";
@@ -40,5 +25,16 @@
   color: $grey-color;
   a {
     @include btnStyle;
+    padding: 4px 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
   }
+}
+
+// logo
+.powered-by .sfdc_richtext {
+  background-image: url(../images/powered-by.png);
+  background-position-x: 80px;
+  background-repeat: no-repeat;
+  margin-top: 2px;
 }
