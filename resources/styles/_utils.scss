@@ -15,7 +15,31 @@
 		line-height: 30px;
 	}
 }
-
+.fielo-banner-wide {
+	background: #fff;
+  margin-top: -20px;
+  width: 1020px;
+  margin-left: -85px;
+  padding: 0 90px;
+  .fielo-field--is-Name {
+  	font-size: 26px;
+  	text-align: left;
+  	.fielo-field__label {
+  		display: none;
+  	}
+  }
+  .fielo-field--is-External_Description__c {
+  	font-size: 20px;
+	  line-height: 26px;
+	  margin-top: 4px;
+	  margin-bottom: 44px;
+	  color: $grey-color;
+	  text-align: left;
+  	.fielo-field__label {
+  		display: none;
+  	}
+  }
+}
 .fielo-a4,
 .fielo-a4--sticked {
 	.fielo-main {

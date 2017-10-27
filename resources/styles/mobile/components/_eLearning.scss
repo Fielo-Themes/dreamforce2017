@@ -1,5 +1,7 @@
 // E-Learning
-.cms-elr-category-filter.cms-elr-list-progress.cms-elr-list-action .fielo-grid {
+
+.cms-elr-module-list-action,
+.cms-elr-list-action .fielo-grid {
 	.fielo-title {
 		margin: 0;
 	}
@@ -16,6 +18,7 @@
 	  font-size: 18px;
 	  margin: 0;
 	  padding: 0;
+	  color:#005bd9;
 		.fielo-link {
 			color:#005bd9;
 		}
@@ -23,5 +26,34 @@
 	}
 	.fielo-field--is-FieloELR__Description__c {
 		font-size: 18px;
+	}
+}
+
+
+.cms-elr-module-list-action {
+	width: 900px;
+	margin: 0 auto;
+	.fielo-record-set__data {
+		border-top: 1px solid #000;
+		margin-top: 40px;
+	}
+	.fielo-record {
+  	padding: 15px 0;
+  	margin: 0;
+	}
+	.fielo-field--is-ExternalDescription__c {
+		font-size: 17px;
+		padding: 0;
+		text-align: justify;
+	}
+}
+.cms-elr-form-action--course {
+	text-align: center;
+	margin-top: 50px;
+	.cms-elr-record-action{
+		@include btnStyle;
+	  border-radius: 0;
+	  padding: 10px 86px;
+	  font-size: 18px;
 	}
 }
