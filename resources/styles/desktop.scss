@@ -2,6 +2,10 @@
  * Reglas para dispositivos Desktop
  */
 
+
+
+@import 'tablet';
+
 body {
   font-family: 'Open Sans', Verdana, sans-serif;
   background: #f2f2f2;
@@ -14,48 +18,6 @@ body {
   }
 }
 
-@import 'tablet';
-.fielo-header,
-.fielo-footer {
-  width: 100%;
-  max-width: 100%;
-}
-
-.fielo-header,
-.fielo-footer {
-  &>.fielo-row {
-    width: 100%;
-    max-width: 1280px;
-    position: relative;
-    margin: auto;
-    padding: 0px 20px;
-  }
-}
-
-.home-guest {
-  body {
-    background: #fff;
-    main {
-      padding: 0px;
-    }
-  }
-  .fielo-main {
-    max-width: 100%;
-    >.fielo-row {
-      width: 100%;
-      max-width: 1280px;
-      position: relative;
-      margin: auto;
-      padding: 0px 20px;
-      >div {
-        max-width: 864px;
-        &.banner-home-guest {
-          max-width: 100%;
-        }
-      }
-    }
-  }
-}
 
 @media #{$bp-desktop-1} {}
 

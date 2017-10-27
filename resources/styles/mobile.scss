@@ -33,6 +33,89 @@
 	color: #005bd9;
 }
 
+.fielo-header,
+.fielo-footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.fielo-header,
+.fielo-footer {
+  &>.fielo-row {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    margin: auto;
+    padding: 0px 20px;
+  }
+}
+
+.home-guest {
+  body {
+    background: #fff;
+    main {
+      padding: 0px;
+    }
+  }
+  .fielo-main {
+    max-width: 100%;
+    >.fielo-row {
+      width: 100%;
+      max-width: 1280px;
+      position: relative;
+      margin: auto;
+      padding: 0px 20px;
+      >div {
+        max-width: 864px;
+        &.banner-home-guest {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.cms-prp-invoice-fieldset {
+	.fielo-field {
+		float: left;
+	  margin-right: 50px;
+	  width: 44%;
+	  height: 70px;
+	  margin-bottom: 0px;
+	}
+}
+
+.cms-prp-lookup-button__icon {
+	background-color: #6b6968;
+  position: relative;
+  left: -50px;
+  border-radius: 0;
+  height: 39px;
+  top: 4px;
+}
+
+.cms-prp-invoice-items,
+.cms-prp-multifileuploader,
+.cms-prp-lookup-search__model {
+	.fielo-field {
+		display: table-cell;
+	}
+	.fielo-input {
+		width: 92% !important;
+	}
+	.fielo-field--is-FieloPRP__Product__c {
+		width: 6%;
+	}
+	.cms-prp-section-header  .fielo-button {
+		background: #005bd9;
+		color: #fff;
+  	margin-left: 10px;
+	}
+}
+.cms-prp-lookup-search__model .fielo-button {
+	background: #005bd9;
+	color: #fff;
+}
 
 @media #{$bp-mobile-1} {}
 
