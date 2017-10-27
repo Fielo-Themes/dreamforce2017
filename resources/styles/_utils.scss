@@ -2,8 +2,13 @@
   margin: 0;
 }
 
-.fielo-margin--botom-xl {
-	margin-bottom: 110px;
+.fielo-margin--botom{
+ 	&-xl {
+		margin-bottom: 110px;
+	}
+	&-l {
+		margin-bottom: 40px;
+	}
 }
 .fielo-a4 {
 	.fielo-main {

@@ -5,6 +5,8 @@
     text-align: left;
     display: table;
     border: none;
+    font-size: 16px;
+    color: $primary-color;
     &:first-of-type,
     &:last-of-type {
       padding: 10px;
@@ -33,10 +35,10 @@
   .fielo-field {
     border: none;
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     padding: 10px;
-    font-family: "SalesforceSans-Regular";
-    text-transform: uppercase;
+    font-family: "SalesforceSans-Light";
+    text-transform: lowercase;
     font-weight: 300;
   }
 }
