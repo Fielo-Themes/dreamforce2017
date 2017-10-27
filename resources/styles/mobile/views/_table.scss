@@ -1,12 +1,15 @@
 .fielo-table {
   margin-bottom: 20px;
-  border: none;
   .fielo-field {
     text-align: left;
     display: table;
     border: none;
     font-size: 16px;
     color: $primary-color;
+    border-left: 1px solid #ffffff !important;
+    &:first-child{
+      border-left: none !important;
+    }
     &:first-of-type,
     &:last-of-type {
       padding: 10px;
