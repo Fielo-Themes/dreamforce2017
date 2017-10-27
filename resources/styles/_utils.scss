@@ -10,12 +10,24 @@
 		margin-bottom: 40px;
 	}
 }
-.fielo-a4 {
+.ffielo-line-height{
+	&--m{
+		line-height: 30px;
+	}
+}
+
+.fielo-a4,
+.fielo-a4--sticked {
 	.fielo-main {
 		background: #fff;
   	margin-top: 30px;
   	padding: 30px 100px 0;
   	max-width: 950px;
+	}
+}
+.fielo-a4--sticked {
+	.fielo-main {
+  	margin-top: 0px;
 	}
 }
 
