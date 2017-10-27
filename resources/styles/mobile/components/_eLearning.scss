@@ -1,16 +1,27 @@
 // E-Learning
 .cms-elr-category-filter.cms-elr-list-progress.cms-elr-list-action .fielo-grid {
+	.fielo-title {
+		margin: 0;
+	}
+	.fielo-record {
+	  border-bottom: 1px solid #000;
+  	padding-bottom: 26px;
+  	padding-top: 20px;
+	}
 	.fielo-field--is-ViewImage {
 		float: left;
 	}
 	.fielo-field--is-Name {
-		text-transform: uppercase;
+	  text-transform: uppercase;
+	  font-size: 18px;
+	  margin: 0;
+	  padding: 0;
 		.fielo-link {
 			color:#005bd9;
 		}
 
 	}
 	.fielo-field--is-FieloELR__Description__c {
-
+		font-size: 18px;
 	}
 }
