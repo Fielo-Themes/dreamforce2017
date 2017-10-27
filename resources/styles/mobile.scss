@@ -27,6 +27,12 @@
 @import 'mobile/components/_register';
 @import 'mobile/components/_content';
 
+.fielo-menu .fielo-list__item.active {
+	background: none;
+	font-weight: bold;
+	color: #005bd9;
+}
+
 
 @media #{$bp-mobile-1} {}
 

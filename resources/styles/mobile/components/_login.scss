@@ -1,26 +1,56 @@
 .fielo-login,
-.fieloplt-login{
-	text-align: center;
+.fieloplt-login { 
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.47);
+  height: 100%;
+  width: calc(100% - 56px);
+  
+  form {
+  	background-color: rgba(101, 95, 95, 0.72);
+	  width: 420px;
+	  margin: 0 auto;
+	  top: calc(50% - 135px);
+	  position: relative;
+  }
   .fielo-title{
-    display: block;
-    width: 100%;
-    text-align: center;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  text-align: center;
+	  padding-top: 0;
+	  display: inline;
+	  margin: 0px 0 0 0;
+	  top: 22px;
+	  position: relative;
+	  border: none;
   }
 	.fielo-field__value{
-		width: 100%;
+
 		input{
-			padding: 10px 40px;
-			color: $grey-color;
-			text-align: center;
+		  padding: 0px 0px !important;
+		  color: #95989a;
+		  text-align: center;
+		  width: 350px !important;
+		  margin-left: 30px;
+		  line-height: 40px;
 		}
 	}
 	.fielo-field__label{
-		width: 100%;
-		color: $label-color;
+		color: #ffffff !important;
+	  padding-left: 30px;
+	  font-size: 12px !important;
 	}
 	.fielo-login__link{
-		color: $link-color;
-		font-size: 12px;
-		padding-right: 10px;
+	  color: #ffffff;
+	  font-size: 12px;
+	  padding-right: 10px;
+	}
+	.fielo-controls {
+		text-align: right;
+		padding-bottom: 20px;
+	}
+	.fieloplt-login__submit {
+		margin-right: 38px;
 	}
 }

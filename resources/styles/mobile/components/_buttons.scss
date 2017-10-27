@@ -52,6 +52,11 @@
     color: #FFF;
     background-color: $dangerColor;
   }
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: #ffffff !important;
+  }
 }
 
 .fielo-button__submit {
