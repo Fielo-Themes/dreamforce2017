@@ -33,6 +33,20 @@
     width: 158px;
     background-size: 72px;
     background-position: -13px;
+
+    display: inline-block;    
+    color: #fff!important;
+    text-transform: uppercase;
+    font-family: SalesforceSans-Light;
+    border: none;
+    outline: 0;
+    line-height: 45px;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 0 40px;
+
+
   }
 
   .fielo-icon--checkout {
@@ -40,8 +54,32 @@
   }
 
   .fielo-button__empty-cart{
-    @include cartIcon;
-    width: 168px;
+    @include cartIcon;    
+    display: inline-block;    
+    color: #fff!important;
+    text-transform: uppercase;
+    font-family: SalesforceSans-Light;
+    border: none;
+    outline: 0;
+    line-height: 45px;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 0 40px;
+  }
+
+  .fielo-button__save{
+    display: inline-block;    
+    color: #fff!important;
+    text-transform: uppercase;
+    font-family: SalesforceSans-Light;
+    border: none;
+    outline: 0;
+    line-height: 45px;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 0 40px;
   }
 
   .fielo-icon--cart {
@@ -62,8 +100,9 @@
   }
 }
 
-.fieloplt-shopping-cart__quantity{
+.fielo-form .fielo-field .fielo-field__value .fieloplt-shopping-cart__quantity{
   padding: 5px;
+  width: 30%;
 }
 
 .fieloplt-shopping-cart__total{
@@ -73,20 +112,6 @@
 
 @media #{$bp-mobile-3} {
   .fieloplt-shopping-cart {
-    .fielo-field--is-FieloAlpha__PointsCant__c,
-    .fielo-field--is-ShoppingTotal {
-      text-align: center;
-    }
-
-    .fielo-field--is-ShoppingQuantity,
-    .fielo-field--is-quantity {
-       text-align: center;
-    }
-
-    .fielo-field--is-delete,
-    .fielo-field--is-ShoppingDelete {
-      text-align: center;
-    }
 
     .fielo-button__delete {
       border: none;
@@ -102,6 +127,9 @@
      &::before {
         content: "×";
         font-size: 46px;
+        top: -10px;
+        position: relative;
+        float: left;
       }
     }
   }

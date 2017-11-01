@@ -1,0 +1,74 @@
+.module-view{
+	.fielo-title{
+		border-bottom: none;
+		margin-bottom: 10px;
+	}
+	.fielo-field{
+		border-bottom: 1px solid;
+		margin-bottom: 0;
+		margin-top: 0;
+		&.fielo-field--is-Name{	
+			border-bottom: none;
+		    text-transform: uppercase;
+		    margin-bottom: 0;
+		    .fielo-output{
+		    	font-weight: bold;
+		    	font-size: 20px;
+		    	color: black;
+		    }
+		}	
+		&.fielo-field--is-FieloELR__Description__c{
+			padding-bottom: 15px;
+			.fielo-output{
+				font-size: 15px;
+		    	color: #a9a2a2;
+			}
+		}
+		.fielo-field__label{
+			font-size: 14px;
+	    	color: #a9a2a2;		
+		}
+		.fielo-output{
+			color: #005bd9;	
+		}
+	}	
+}
+
+.module-view__actions{
+	.fielo-button{
+	  font-size: 1.2em;
+	  text-transform: uppercase;
+	  border-radius: 0px;
+	  padding: 7px 20px;
+	  margin: 5px 0;
+	  background-color: #ddd;
+	  font-family: "SalesforceSans-Light";
+	  border: none;
+	  outline: none;
+	  display: inline-block;
+	  background: #005bd9;
+	  color: #ffffff !important;
+	  text-transform: uppercase;
+	  &:hover {
+	    text-decoration: none;
+	    opacity: 0.8;
+	    color: #ffffff !important;
+	  }
+	}
+}
+
+.cms-elr-question-response-list{
+	.fielo-title{
+		border-bottom: none;
+		margin-bottom: 10px;
+	}
+	.fielo-record-set__data{
+		.fielo-field--is-FieloELR__Question__c{
+			.fielo-output{
+				text-transform: uppercase;
+			    font-size: 18px;
+			    color: #005bd9;				
+			}
+		}		
+	}
+}

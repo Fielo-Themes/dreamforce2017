@@ -1,0 +1,51 @@
+.my-courses{
+	.fielo-title{
+		font-weight: bold;
+		border-bottom: none;
+	}
+	.fielo-table{
+		background: transparent;
+		.fielo-table__head{
+			display: none;
+		}
+		.fielo-record-set__data{
+			.fielo-record{
+				background: transparent;
+				.fielo-link{
+				    color: #005bd9;
+				    text-transform: uppercase;
+				    font-weight: 500;
+				    &:hover{
+				    	text-decoration: none;
+				    }
+				}
+				.fielo-field{
+					border-left: none;
+					&.fielo-field--is-ViewImage{
+						text-align: left;
+						padding-left: 0;
+						.fielo-image{
+							width: auto;
+							max-width: 120px;
+						}
+					}					
+				}
+			}
+		}		
+	}
+}
+@media(min-width: 400px){
+	.my-courses{		
+		.fielo-table .fielo-record-set__data .fielo-record:nth-child(even) .fielo-field, .fielo-table .fielo-record-set__data .fielo-record:nth-child(odd) .fielo-field {
+	    	border-top: 1px solid black; 
+	    	padding: 15px 10px;
+	    	&.fielo-field--is-ViewImage{
+				text-align: left;
+				padding-left: 0;					
+			}					
+		}			
+	} 
+}
+
+
+

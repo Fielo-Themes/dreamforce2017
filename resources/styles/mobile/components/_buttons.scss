@@ -2,7 +2,7 @@
 @mixin fieloButton {
   font-size: 1.2em;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 7px 20px;
   margin: 5px 0;
   background-color: #ddd;
@@ -40,7 +40,7 @@
 
 .fielo-button {
   @include fieloButton;
-
+  
   &--safe {
     @include fieloButton;
     background-color: $safeColor;

@@ -34,7 +34,7 @@
 
 
 .cms-elr-module-list-action {
-	width: 900px;
+	width: 100%;
 	margin: 0 auto;
 	.fielo-record-set__data {
 		border-top: 1px solid #000;
@@ -51,7 +51,7 @@
 	}
 }
 .cms-elr-form-action--course {
-	text-align: center;
+	text-align: left;
 	margin-top: 50px;
 	.cms-elr-record-action{
 		@include btnStyle;
@@ -59,4 +59,32 @@
 	  padding: 10px 86px;
 	  font-size: 18px;
 	}
+}
+
+/* QUIZ */
+.cms-elr-quiz{
+	#cms-elr-question-text{
+		font-size: 20px;
+    	font-weight: 500;
+	}
+	.cms-elr-answers-container{
+		margin-top: 10px;
+    	margin-bottom: 20px;
+    	.cms-elr-multiplechoice-answer{
+    		padding-left: 0;
+    		.cms-elr-multiplechoice-answer__item{
+    			padding-bottom: 5px;
+    		}
+    	}
+    	.cms-elr-singlechoice-answer{
+    		padding-left: 0;
+    		.cms-elr-singlechoice-answer__item{
+    			padding-bottom: 5px;
+    		}
+    	}
+    	.cms-elr-shortanswer-answer{
+    		padding-left: 0;
+    	}
+
+	}	
 }
